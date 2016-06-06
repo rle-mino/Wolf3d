@@ -6,7 +6,7 @@
 /*   By: rle-mino <rle-mino@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/05/20 21:35:17 by rle-mino          #+#    #+#             */
-/*   Updated: 2016/05/26 21:23:08 by rle-mino         ###   ########.fr       */
+/*   Updated: 2016/06/06 11:32:32 by rle-mino         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,7 @@ void		get_spawn(t_wolf *wolf)
 			}
 		}
 	}
+	wtd_error(NO_SPAWN, NULL);
 }
 
 void		set_wolf(t_wolf *wolf, int x)

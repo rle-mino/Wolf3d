@@ -6,7 +6,7 @@
 /*   By: rle-mino <rle-mino@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/05/20 16:41:22 by rle-mino          #+#    #+#             */
-/*   Updated: 2016/05/26 22:16:52 by rle-mino         ###   ########.fr       */
+/*   Updated: 2016/06/06 11:27:30 by rle-mino         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,8 @@ enum
 	MAP,
 	SMALL,
 	ERRNO_ERR,
-	IMG_DEL
+	IMG_DEL,
+	NO_SPAWN
 };
 
 typedef struct		s_wolf

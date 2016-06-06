@@ -6,7 +6,7 @@
 /*   By: rle-mino <rle-mino@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/05/25 18:56:02 by rle-mino          #+#    #+#             */
-/*   Updated: 2016/05/26 22:17:52 by rle-mino         ###   ########.fr       */
+/*   Updated: 2016/06/06 11:32:09 by rle-mino         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,6 +55,8 @@ int			wtd_error(int err, t_wolf *wolf)
 		ft_putstr_fd("Start menu unavailable\n", 2);
 	if (err == ERRNO_ERR)
 		perror("Wolf3d");
+	if (err == NO_SPAWN)
+		ft_putstr_fd("Impossible to find a spawn location\n", 2);
 	exit(EXIT_FAILURE);
 	return (0);
 }
